@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Ventana extends JFrame{
+public class Ventana extends JFrame {
 
     private JComponent panel;// panel con todas mis solapitas
     private JMenuBar menuBar;
@@ -14,53 +14,29 @@ public class Ventana extends JFrame{
 
     public Ventana(){
         setSize(600, 400);
+        setLocationRelativeTo(null);
         setTitle("Conversor de Moneda y Temperatura");
-        panel = this.hacerPaneles();
-        this.getContentPane().add(panel);
-        this.setVisible(true);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        //JPanel panel = new JPanel();
-
-
-        //mostrarMenu();
-
-        //panel.add(menuBar);
-        //add(panel);
-    }
-    public void mostrarMenu(){
-        // inicializo los atributos
         menuBar = new JMenuBar();
-        menu = new JMenu("Elija una opcion válida");
-        item1 = new JMenuItem("De grados a fahrenheit");
-        item2 = new JMenuItem("De a fahrenheit a grados");
-        item3 = new JMenuItem("Salir");
-        menu.add(item1);
-        menu.add(item2);
-        menu.add(item3);
+        menu = new JMenu("Opciones");
+        item1 = new JMenuItem("Ver Créditos");
+        item2 = new JMenuItem("Salir");
+        menu.add(item1); menu.add(item2);
         menuBar.add(menu);
+        setJMenuBar(menuBar);
 
-        item2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        panel = hacerPaneles();
+        getContentPane().add(panel);
+        setVisible(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        actionListenersProgram();
+    }
 
-                button1 = new JButton("aceptar");
-                button1.setVisible(true);
-            }
-        });
-
-        item3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane pane = new JOptionPane();
-                Object[] options = {"Si, quiero salir", "No, quiero quedarme"};
-                Integer s = JOptionPane.showOptionDialog(null, "Seguro que deseas salir?",
-                        "Saliendo",0,3, null,options,options[0]);
-                if (s == 0){
-                    System.exit(0);
-                }
-            }
-        });
+    public void actionListenersProgram(){
+        ActionListener verCreditoAL = new Creditos();
+        item1.addActionListener(verCreditoAL);
+        ActionListener salirAL = new Salir();
+        item2.addActionListener(salirAL);
     }
 
     private JComponent hacerPaneles(){
@@ -68,7 +44,7 @@ public class Ventana extends JFrame{
         //tabbedPane.putClientProperty("jgoodies.noContentBorder", Boolean.TRUE);
         tabbedPane.add("Conversor de Moneda", new MonedaConversor().panel());
         tabbedPane.add("Conversor de Temperatura", new TemperaturaConversor().panel());
-        tabbedPane.add("Créditos :)", new Creditos().panel());
         return tabbedPane;
     }
+
 }
