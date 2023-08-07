@@ -1,7 +1,6 @@
 package com.conversor;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ventana extends JFrame {
@@ -42,7 +41,7 @@ public class Ventana extends JFrame {
     private JComponent hacerPaneles(){
         JTabbedPane tabbedPane = new JTabbedPane();
         //tabbedPane.putClientProperty("jgoodies.noContentBorder", Boolean.TRUE);
-        tabbedPane.add("Conversor de Moneda", new MonedaConversor().panel());
+        tabbedPane.add("Conversor de Moneda", new PanelMonedaConversor().panel());
         tabbedPane.add("Conversor de Temperatura", new TemperaturaConversor().panel());
         return tabbedPane;
     }

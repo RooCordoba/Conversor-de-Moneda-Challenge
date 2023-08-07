@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cf54a5d-7827-4b8f-b580-908c543f323c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/conversor/PanelMonedaConversor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/Creditos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Creditos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/MonedaConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/MonedaConversor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conversor/MonedaConversor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/conversor/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Ventana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,62 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GridBagLayoutExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.conversor.GridBagLayoutExample" />
+      <module name="Conversor-de-Moneda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.conversor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JTextFieldValidation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.conversor.JTextFieldValidation" />
+      <module name="Conversor-de-Moneda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.conversor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JTextFieldValidation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.conversor.JTextFieldValidation" />
+      <module name="Conversor-de-Moneda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.conversor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Conversor-de-Moneda" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GridBagLayoutExample" />
+        <item itemvalue="Application.JTextFieldValidation" />
+        <item itemvalue="Application.JTextFieldValidation (1)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +114,10 @@
       <updated>1690893818591</updated>
       <workItem from="1690893819886" duration="3090000" />
       <workItem from="1690973053657" duration="971000" />
-      <workItem from="1690978300239" duration="19435000" />
+      <workItem from="1690978300239" duration="19642000" />
+      <workItem from="1691068311487" duration="19158000" />
+      <workItem from="1691155455798" duration="12598000" />
+      <workItem from="1691431476442" duration="17931000" />
     </task>
     <servers />
   </component>
