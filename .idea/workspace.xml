@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cf54a5d-7827-4b8f-b580-908c543f323c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/conversor/PanelMonedaConversor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/conversor/ConversoresTemperatura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/conversor/PanelTemperaturaPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/MonedaConversor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conversor/Botones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Botones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conversor/ConversoresMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/ConversoresMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conversor/PanelMonedaConversor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conversor/TemperaturaConversor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/conversor/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Ventana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +121,7 @@
       <workItem from="1690978300239" duration="19642000" />
       <workItem from="1691068311487" duration="19158000" />
       <workItem from="1691155455798" duration="12598000" />
-      <workItem from="1691431476442" duration="17931000" />
+      <workItem from="1691431476442" duration="29475000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,7 @@ public class Botones {
 
     // hace que los campos de el texto a introducir y el de resultado se reseteen
     protected static void resetFields(JButton button, JTextComponent field1, JTextComponent field2, JLabel errorField){
+
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

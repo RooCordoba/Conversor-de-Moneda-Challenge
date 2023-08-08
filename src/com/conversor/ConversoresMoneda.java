@@ -1,32 +1,13 @@
 package com.conversor;
+import javax.swing.*;
 
-import javax.swing.text.JTextComponent;
-
-public class ConversoresMoneda {
-    public static void convertir(int option,
-                                 JTextComponent inputTextField,
-                                 JTextComponent outputTextField){
-        double myOutputResult;
-        String myInput = inputTextField.getText();
-
-        if (option == 1){
-            myOutputResult = deGradosAFahrenheit(myInput);
-            Botones.convertField(outputTextField, myOutputResult);
-        } else if(option == 2){
-            myOutputResult = deFahrenheitAGrados(myInput);
-            Botones.convertField(outputTextField, myOutputResult);
-        } else{
-
-        }
+class ConversoresMoneda implements Conversor {
+    protected ConversoresMoneda(){
 
     }
-
-    public static double deGradosAFahrenheit(String grados){
-        double res = Double.parseDouble(grados);
-        return (res*1.8)+32;
-    }
-    protected static double deFahrenheitAGrados(String fahrenheit){
-        double res = Double.parseDouble(fahrenheit);
-        return (res-32)/1.8;
+    @Override
+    public JComponent panel(){
+        JPanel panel = new JPanel();
+        return panel;
     }
 }

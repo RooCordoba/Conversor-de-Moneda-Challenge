@@ -41,8 +41,8 @@ public class Ventana extends JFrame {
     private JComponent hacerPaneles(){
         JTabbedPane tabbedPane = new JTabbedPane();
         //tabbedPane.putClientProperty("jgoodies.noContentBorder", Boolean.TRUE);
-        tabbedPane.add("Conversor de Moneda", new PanelMonedaConversor().panel());
-        tabbedPane.add("Conversor de Temperatura", new TemperaturaConversor().panel());
+        tabbedPane.add("Conversor de Moneda", new ConversoresMoneda().panel());
+        tabbedPane.add("Conversor de Temperatura", new PanelTemperaturaPrincipal().getPanelPrincipal());
         return tabbedPane;
     }
 
