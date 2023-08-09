@@ -1,5 +1,9 @@
 package com.conversor;
 
+import com.conversor.Botones;
+import com.conversor.ConversoresTemperatura;
+import com.conversor.Funciones;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -33,9 +37,7 @@ public class PanelTemperatura{
         return resultado;
     }
 
-    public static void setErrorLabel(JLabel errorLabel, String str) {
-        errorLabel.setText(str);
-    }
+
 
     public PanelTemperatura(int id, String str){
         panelPrincipal = new JPanel(new GridBagLayout());
@@ -46,7 +48,6 @@ public class PanelTemperatura{
         ingresaTemp = new JLabel("Ingresa la temperatura: ", SwingConstants.CENTER);
         result = new JLabel("Resultado de la conversión: ", SwingConstants.CENTER);
         errorLabel = new JLabel(" ",SwingConstants.CENTER);
-        errorLabel.setForeground(Color.red);
         convertButton = new JButton("Convertir");
         resetButton = new JButton("Resetear");
         inputText = new JTextField(25);
@@ -91,14 +92,15 @@ public class PanelTemperatura{
             public void actionPerformed(ActionEvent e) {
                 String in = inputText.getText();
                 if (in.trim().isEmpty()){
-                    Toolkit.getDefaultToolkit().beep();
-                    setErrorLabel(errorLabel,"* Ingresar al menos un numero");
+                    Funciones.inputVacioError(errorLabel);
                 } else {
                     ConversoresTemperatura.convertir(getId(), inputText,resultado);
                 }
             }
         });
     }
+
+
 
 
 }

@@ -16,6 +16,7 @@ public class Funciones {
                         (c == KeyEvent.VK_DELETE))) {
                     Toolkit.getDefaultToolkit().beep();
                     e.consume();
+                    errorLabel.setForeground(Color.red);
                     errorLabel.setText("* Ingresa solo números! (dígitos del 0 al 9)");
                 } else {
                     errorLabel.setText(" ");
@@ -32,5 +33,14 @@ public class Funciones {
         gbc.weightx = 1.0;
         gbc.weighty = 1.0;
         return gbc;
+    }
+
+    public static void setErrorLabel(JLabel errorLabel, String str) {
+        errorLabel.setText(str);
+    }
+    protected static void inputVacioError(JLabel errorLabel){
+        errorLabel.setForeground(Color.red);
+        Toolkit.getDefaultToolkit().beep();
+        setErrorLabel(errorLabel, "* Ingresar al menos un numero");
     }
 }

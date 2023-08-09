@@ -8,8 +8,7 @@ public class Ventana extends JFrame {
     private JComponent panel;// panel con todas mis solapitas
     private JMenuBar menuBar;
     private JMenu menu;
-    private JMenuItem item1, item2, item3;
-    private JButton button1;
+    private JMenuItem item1, item2;
 
     public Ventana(){
         setSize(600, 400);
@@ -40,8 +39,7 @@ public class Ventana extends JFrame {
 
     private JComponent hacerPaneles(){
         JTabbedPane tabbedPane = new JTabbedPane();
-        //tabbedPane.putClientProperty("jgoodies.noContentBorder", Boolean.TRUE);
-        tabbedPane.add("Conversor de Moneda", new ConversoresMoneda().panel());
+        tabbedPane.add("Conversor de Moneda", new PanelMonedaPrincipal().getPanel());
         tabbedPane.add("Conversor de Temperatura", new PanelTemperaturaPrincipal().getPanelPrincipal());
         return tabbedPane;
     }
