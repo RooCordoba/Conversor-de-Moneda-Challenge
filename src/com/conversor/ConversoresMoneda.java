@@ -4,30 +4,31 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ConversoresMoneda {
-    static void seleccionarOpcion(PanelMonedaPrincipal panel){
+
+    protected static void seleccionarOpcion(PanelMonedaPrincipal panel){
         for (int i =0 ; i< panel.getMenu().getItemCount(); i++){
-            int finalOption = i;
+            int finalI = i;
             panel.getMenu().getItem(i).addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     panel.setErrorField(" ");
-                    conversion(finalOption, panel);
+                    panel.setSelectedItem(finalI);
+                    panel.setTipoConversion("Convertir " + panel.getMenu().getItem(finalI).getText());
+                    panel.getInputArea().setEditable(true);
+                    panel.getConvertButton().setEnabled(true);
                 }
             });
         };
     }
 
-    public static void conversion(int option, PanelMonedaPrincipal panel){
-
-            panel.setTipoConversion("Convertir " + panel.getMenu().getItem(option).getText());
-            panel.getInputArea().setEditable(true);
+    protected static void conversion(PanelMonedaPrincipal panel){
             panel.getConvertButton().addActionListener(e -> {
-
                 if(panel.getInputArea().getText().trim().isEmpty()){
                     Funciones.inputVacioError(panel.getErrorField());
                 } else {
                     Double inputNumber = Double.parseDouble(panel.getInputArea().getText());
-                    switch (option){
+                    switch (panel.getSelectedItem()){
+
                         case 0:
                             inputNumber = inputNumber*0.0035;
                             break;
@@ -61,11 +62,9 @@ class ConversoresMoneda {
                         default:
                             break;
                     }
-                    JOptionPane.showMessageDialog(panel.getFrame(), "La conversion es: $"+inputNumber,
-                            panel.getMenu().getItem(option).getText(),JOptionPane.INFORMATION_MESSAGE);
-
+                    JOptionPane.showMessageDialog(panel.getPanelConversor(), "La conversion es: $"+inputNumber,
+                            panel.getMenu().getItem(panel.getSelectedItem()).getText(),JOptionPane.INFORMATION_MESSAGE);
                 }
             });
-
     }
 }

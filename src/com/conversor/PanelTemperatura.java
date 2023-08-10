@@ -1,9 +1,5 @@
 package com.conversor;
 
-import com.conversor.Botones;
-import com.conversor.ConversoresTemperatura;
-import com.conversor.Funciones;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -29,16 +25,6 @@ public class PanelTemperatura{
         return id;
     }
 
-    public JTextField getInputText() {
-        return inputText;
-    }
-
-    public JTextPane getResultado() {
-        return resultado;
-    }
-
-
-
     public PanelTemperatura(int id, String str){
         panelPrincipal = new JPanel(new GridBagLayout());
         panelPrincipal.setBorder(BorderFactory.createTitledBorder(str));
@@ -54,7 +40,6 @@ public class PanelTemperatura{
         resultado = new JTextPane();
         resultado.setEditable(false);
 
-        // genera grid interno del panel
         gbc = Funciones.generateGrid();
 
         panelPrincipal.add(ingresaTemp, gbc);

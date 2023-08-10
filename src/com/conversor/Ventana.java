@@ -31,8 +31,8 @@ public class Ventana extends JFrame {
     }
 
     public void actionListenersProgram(){
-        ActionListener verCreditoAL = new Creditos();
-        item1.addActionListener(verCreditoAL);
+        ActionListener credito = new Creditos();
+        item1.addActionListener(credito);
         ActionListener salirAL = new Salir();
         item2.addActionListener(salirAL);
     }

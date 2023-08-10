@@ -13,45 +13,26 @@ public class PanelMonedaPrincipal {
     private JButton convertButton;
     private JButton resetButton;
     private JLabel errorField;
-    private JFrame frame = new JFrame();
+    private JOptionPane panelConversor;
+    private int selectedItem;
 
-    public JFrame getFrame() {
-        return frame;
+    public int getSelectedItem() {
+        return selectedItem;
+    }
+
+    public void setSelectedItem(int selectedItem) {
+        this.selectedItem = selectedItem;
+    }
+
+    public JOptionPane getPanelConversor() {
+        return panelConversor;
     }
     public JPanel getPanel() {
         return panel;
     }
 
-    public void setPanel(JPanel panel) {
-        this.panel = panel;
-    }
-
-    public GridBagConstraints getGbc() {
-        return gbc;
-    }
-
-    public void setGbc(GridBagConstraints gbc) {
-        this.gbc = gbc;
-    }
-
-    public JMenuBar getMenuBar() {
-        return menuBar;
-    }
-
-    public void setMenuBar(JMenuBar menuBar) {
-        this.menuBar = menuBar;
-    }
-
     public JMenu getMenu() {
         return menu;
-    }
-
-    public void setMenu(JMenu menu) {
-        this.menu = menu;
-    }
-
-    public JLabel getTipoConversion() {
-        return tipoConversion;
     }
 
     public void setTipoConversion(String str) {
@@ -62,24 +43,8 @@ public class PanelMonedaPrincipal {
         return inputArea;
     }
 
-    public void setInputArea(JTextField inputArea) {
-        this.inputArea = inputArea;
-    }
-
     public JButton getConvertButton() {
         return convertButton;
-    }
-
-    public void setConvertButton(JButton convertButton) {
-        this.convertButton = convertButton;
-    }
-
-    public JButton getResetButton() {
-        return resetButton;
-    }
-
-    public void setResetButton(JButton resetButton) {
-        this.resetButton = resetButton;
     }
 
     public JLabel getErrorField() {
@@ -91,6 +56,7 @@ public class PanelMonedaPrincipal {
     }
 
     public PanelMonedaPrincipal(){
+        panelConversor = new JOptionPane();
         panel = new JPanel(new GridBagLayout());
         inputArea = new JTextField(20);
         inputArea.setEditable(false);
@@ -98,6 +64,7 @@ public class PanelMonedaPrincipal {
         menuBar = new JMenuBar();
         menu = new JMenu("Elija una opcion de conversión");
         convertButton = new JButton("Convertir");
+        convertButton.setEnabled(false);
         errorField = new JLabel(" ");
         resetButton = new JButton("Reset");
 
@@ -129,6 +96,7 @@ public class PanelMonedaPrincipal {
         Funciones.numberOnly(inputArea, errorField); // evento error solo numeros
         resetButtonEvent(resetButton); // evento del boton reset
         ConversoresMoneda.seleccionarOpcion(this); // evento seleccion de opcion
+        ConversoresMoneda.conversion(this); // evento conversion de moneda
         menuBar.add(menu,gbc);
     }
 
@@ -138,6 +106,7 @@ public class PanelMonedaPrincipal {
             this.errorField.setText(" ");
             this.inputArea.setText("");
             this.inputArea.setEditable(false);
+            this.convertButton.setEnabled(false);
         });
     }
 }
