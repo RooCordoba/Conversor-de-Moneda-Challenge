@@ -12,13 +12,6 @@
     <list default="true" id="5cf54a5d-7827-4b8f-b580-908c543f323c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/Botones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Botones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/Conversor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/ConversoresMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/ConversoresMoneda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/Creditos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Creditos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/PanelMonedaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/PanelMonedaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/PanelTemperatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/PanelTemperatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conversor/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/Ventana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +128,7 @@
       <workItem from="1691510580982" duration="9105000" />
       <workItem from="1691528429496" duration="17745000" />
       <workItem from="1691548330495" duration="1012000" />
-      <workItem from="1691690680644" duration="14969000" />
+      <workItem from="1691690680644" duration="15739000" />
     </task>
     <servers />
   </component>
