@@ -9,6 +9,8 @@ Posee las funciones de Convertir Moneda y Temperatura.
 
 Este proyecto fue creado usando Java y la librería de Swing.
 
+Para probar el programa, basta con abrir el Conversor-de-Moneda.jar ubicado en la carpeta raiz del proyecto.
+
 - Imagenes de muestra:
 
 ![Image Text](https://github.com/RooCordoba/Conversor-de-Moneda-Challenge/blob/develop/src/imagenes%20git/1.PNG)
@@ -21,4 +23,3 @@ Este proyecto fue creado usando Java y la librería de Swing.
 
 ![Image Text](https://github.com/RooCordoba/Conversor-de-Moneda-Challenge/blob/develop/src/imagenes%20git/5.PNG)
 
-Para probar el programa, basta con abrir el Conversor-de-Moneda.jar ubicado en la carpeta raiz del proyecto.
